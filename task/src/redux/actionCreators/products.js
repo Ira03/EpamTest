@@ -1,6 +1,6 @@
 import { ADD_PRODUCTS } from '../reducers/productsReducer';
 
-export const setModeAction = payload => ({
+export const addProductsAction = payload => ({
   type: ADD_PRODUCTS,
   payload,
 });

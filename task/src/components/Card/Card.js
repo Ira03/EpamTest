@@ -18,7 +18,7 @@ export const Card = props => {
           {listMode && <Options {...description} />}
         </div>
         <div className="card__container">
-          <span className="card__price">{price}</span>;
+          <span className="card__price">{price}</span>
           <Button />
         </div>
       </div>
