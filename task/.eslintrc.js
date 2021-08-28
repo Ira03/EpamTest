@@ -11,7 +11,6 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
-
   parserOptions: {
     ecmaVersion: 2018,
     ecmaFeatures: {
@@ -20,7 +19,7 @@ module.exports = {
     sourceType: 'module',
 
   },
-  plugins: ['@babel','prettier', 'react'],
+  plugins: ['@babel','prettier', 'react', 'import'],
   rules: {
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
@@ -49,12 +48,11 @@ module.exports = {
     "@babel/new-cap": "error",
     "@babel/no-invalid-this": "error",
     "@babel/no-unused-expressions": "error",
-    "@babel/semi": "error"
   },
   settings: {
     react: {
       version: 'detect',
-    },
-  },
+    }
+  }
 
 };

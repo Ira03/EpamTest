@@ -37,6 +37,7 @@ module.exports = ({development}) => ({
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'assets/[hash][ext]',
   },
+
   module: {
     rules: [
       {
