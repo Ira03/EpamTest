@@ -21,6 +21,7 @@ module.exports = {
   },
   plugins: ['@babel','prettier', 'react', 'import'],
   rules: {
+    "semi": "error",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
     'prettier/prettier': [
@@ -36,7 +37,7 @@ module.exports = {
         ignore: ['context', 'tracking'],
       },
     ],
-    'no-console': "warn",
+    'no-console': "off",
     'max-len': ["warn", { "code": 150 }],
     'import/first': "error",
     "import/prefer-default-export": "off",

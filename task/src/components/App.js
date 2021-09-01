@@ -1,16 +1,24 @@
-import { Switcher } from './Switcher/Switcher';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchProducts } from '../redux/asyncActions/fetchProducts';
+import { CardsBlock } from './CardsBlock/CardsBlock';
+import { FiltersBlock } from './Filters/FiltersBlock';
 import { Header } from './Header/Header';
 
 export const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, []);
+
   return (
     <div className="wrapper">
       <Header />
       <main className="main">
         <div className="main__block">
-          <div className="main__column"></div>
-          <div className="main__column">
-            <Switcher />
-          </div>
+          <FiltersBlock />
+          <CardsBlock />
         </div>
       </main>
     </div>

@@ -65,8 +65,8 @@ module.exports = ({development}) => ({
   },
 
   plugins: [
-    // ...esLintPlugin(development),
-    new ESLintPlugin({extensions: ['js']}),
+    ...esLintPlugin(development),
+    // new ESLintPlugin({extensions: ['js']}),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',

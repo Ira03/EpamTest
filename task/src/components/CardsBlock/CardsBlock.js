@@ -7,7 +7,7 @@ export const CardsBlock = () => {
   return (
     <div className="main__column">
       <Switcher />
-      <CardsList products={products} />
+      {products.length && <CardsList />}
     </div>
   );
 };
