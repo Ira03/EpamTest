@@ -21,6 +21,7 @@ export const BrandFilters = () => {
       <h2 className="form__title">Бренд</h2>
       <button
         type="button"
+        data-testid="test-btn"
         className={isClicked ? 'btn-expand' : 'btn-expand active'}
         onClick={() => {
           setIsClicked(!isClicked);
@@ -33,7 +34,12 @@ export const BrandFilters = () => {
           return <Filter value={item} type="brand" key={uuidv4()} />;
         })}
       {isClicked && (
-        <button className="btn-input" type="button" onClick={() => setIsAllFilters(!isAllFilters)}>
+        <button
+          data-testid="btn-show"
+          className="btn-input"
+          type="button"
+          onClick={() => setIsAllFilters(!isAllFilters)}
+        >
           {isAllFilters ? 'Скрыть' : 'Показать еще'}
         </button>
       )}

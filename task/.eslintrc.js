@@ -17,9 +17,11 @@ module.exports = {
       jsx: true,
     },
     sourceType: 'module',
-
   },
   plugins: ['@babel','prettier', 'react', 'import'],
+  env: {
+    "jest/globals": true
+  },
   rules: {
     "semi": "error",
     "arrow-body-style": "off",

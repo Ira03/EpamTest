@@ -14,6 +14,7 @@ export const PriceFilters = () => {
       <button
         type="button"
         className={isClicked ? 'btn-expand' : 'btn-expand active'}
+        data-testid="test-btn"
         onClick={() => {
           setIsClicked(!isClicked);
         }}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export const Options = props => {
   const { screen, tech, process, memory, camera } = props;
   return (
-    <ul className="card__list">
+    <ul className="card__list" data-testid="list">
       <li className="card__item">
         Экран: <span>{screen}</span>
       </li>

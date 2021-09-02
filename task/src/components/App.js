@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../redux/asyncActions/fetchProducts';
 import { CardsBlock } from './CardsBlock/CardsBlock';
 import { FiltersBlock } from './Filters/FiltersBlock';

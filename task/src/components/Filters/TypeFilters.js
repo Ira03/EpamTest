@@ -11,6 +11,7 @@ export const TypeFilters = () => {
       <button
         type="button"
         className={isClicked ? 'btn-expand' : 'btn-expand active'}
+        data-testid="test-btn"
         onClick={() => setIsClicked(!isClicked)}
       >
         <span className="material-icons">expand_more</span>

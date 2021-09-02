@@ -30,7 +30,7 @@ export const CardsList = () => {
   }, [typeFilters, brandFilters]);
 
   return (
-    <div className={listMode ? 'cards list-mode' : 'cards'}>
+    <div data-testid="cards-list" className={listMode ? 'cards list-mode' : 'cards'}>
       {list.map(item => (
         <Card {...item} key={uuidv4()} />
       ))}

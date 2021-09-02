@@ -6,15 +6,24 @@
     "lint": "eslint src",
     "prettier": "prettier",
     "webpack": "npm run lint && dev",
-    "fix": "eslint src --fix"
+    "fix": "eslint src --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.0",
     "@babel/eslint-plugin": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
+    "@testing-library/dom": "^8.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "babel-jest": "^27.1.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.1",
@@ -27,8 +36,10 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-webpack-plugin": "^3.0.1",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.1.0",
     "mini-css-extract-plugin": "^2.2.0",
     "prettier": "^2.3.2",
+    "react-test-renderer": "^17.0.2",
     "sass": "^1.38.1",
     "sass-loader": "^12.1.0",
     "webpack": "^5.51.1",
@@ -36,6 +47,8 @@
     "webpack-dev-server": "^4.0.0"
   },
   "dependencies": {
+    "@babel/runtime": "^7.15.3",
+    "node-fetch": "^3.0.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -44,6 +57,7 @@
     "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
+    "regenerator-runtime": "^0.13.9",
     "uuid": "^8.3.2"
   }
 }
