@@ -18,9 +18,10 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: ['@babel','prettier', 'react', 'import'],
+  plugins: ['@babel','prettier', 'react', 'import', 'jest'],
   env: {
-    "jest/globals": true
+    "jest/globals": true,
+    "browser": true,
   },
   rules: {
     "semi": "error",

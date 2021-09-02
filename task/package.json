@@ -11,6 +11,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
+
   "devDependencies": {
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
@@ -48,6 +49,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.15.3",
+    "eslint-plugin-jest": "^24.4.0",
     "node-fetch": "^3.0.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
