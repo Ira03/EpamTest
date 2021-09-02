@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { Button } from '../Button/Button';
 import { Options } from '../Options/Options';
-import './Card.scss';
 
 export const Card = props => {
   const listMode = useSelector(state => state.listMode);

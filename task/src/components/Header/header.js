@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import './Header.scss';
 
 export const Header = () => {
   const products = useSelector(state => state.products);

@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { setModeAction } from '../../redux/actionCreators/mode';
-import './Switcher.scss';
 
 export const Switcher = () => {
   const dispatch = useDispatch();
