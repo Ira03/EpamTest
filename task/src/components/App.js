@@ -4,9 +4,12 @@ import { fetchProducts } from '../redux/asyncActions/fetchProducts';
 import { CardsBlock } from './CardsBlock/CardsBlock';
 import { FiltersBlock } from './Filters/FiltersBlock';
 import { Header } from './Header/Header';
+import { Loader } from './Loader/Loader';
 
 export const App = () => {
   const dispatch = useDispatch();
+  const isLoading = useSelector(state => state.loading);
+  console.log(isLoading);
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -15,12 +18,15 @@ export const App = () => {
   return (
     <div className="wrapper">
       <Header />
-      <main className="main">
-        <div className="main__block">
-          <FiltersBlock />
-          <CardsBlock />
-        </div>
-      </main>
+      {isLoading || (
+        <main className="main">
+          <div className="main__block">
+            <FiltersBlock />
+            <CardsBlock />
+          </div>
+        </main>
+      )}
+      {isLoading && <Loader />}
     </div>
   );
 };

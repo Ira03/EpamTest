@@ -6,6 +6,7 @@ import { Options } from '../Options/Options';
 export const Card = props => {
   const listMode = useSelector(state => state.listMode);
   const { image, title, description, price } = props;
+
   return (
     <div data-testid="card" className="cards__column">
       <div className="card">
