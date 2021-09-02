@@ -11,6 +11,6 @@ describe('App', () => {
       </Provider>,
     );
     expect(screen.getByText(/Смартфоны/i)).toBeInTheDocument();
+    screen.debug();
   });
-  it('fetches products from api', async () => {});
 });

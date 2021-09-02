@@ -25,6 +25,7 @@ export const PriceFilters = () => {
         <div className="form__container">
           <div className="form__input form__input_min">
             <input
+              data-testid="min"
               className="input-text"
               type="text"
               name="min-price"

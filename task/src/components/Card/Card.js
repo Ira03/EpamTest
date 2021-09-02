@@ -15,7 +15,7 @@ export const Card = props => {
         </div>
         <div className="card__content">
           <h3 className="card__title">{title}</h3>
-          {listMode && <Options {...description} data-testid="list" />}
+          {listMode && <Options {...description} />}
         </div>
         <div className="card__container">
           <span className="card__price">{`${Number(price).toLocaleString()} ₽`}</span>

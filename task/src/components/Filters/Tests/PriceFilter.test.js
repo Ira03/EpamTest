@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 import { store } from '../../../redux/store';
 import { PriceFilters } from '../PriceFilters';
+
 describe('PriceFilters', () => {
   it('show prices in inputs', () => {
     const { getAllByRole, queryAllByText } = render(

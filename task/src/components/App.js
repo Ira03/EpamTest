@@ -9,7 +9,7 @@ import { Loader } from './Loader/Loader';
 export const App = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(state => state.loading);
-  console.log(isLoading);
+  const products = useSelector(state => state.products);
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -18,7 +18,7 @@ export const App = () => {
   return (
     <div className="wrapper">
       <Header />
-      {isLoading || (
+      {products.length && (
         <main className="main">
           <div className="main__block">
             <FiltersBlock />
