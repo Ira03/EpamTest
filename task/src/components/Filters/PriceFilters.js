@@ -28,8 +28,10 @@ export const PriceFilters = () => {
               className="input-text"
               type="text"
               name="min-price"
-              value={minPrice.toLocaleString()}
-              onChange={e => dispatch(setMinPriceAction(e.target.value))}
+              value={minPrice}
+              onChange={e => {
+                dispatch(setMinPriceAction(e.target.value));
+              }}
             />
           </div>
           <div className="form__input">
@@ -37,7 +39,7 @@ export const PriceFilters = () => {
               className="input-text"
               type="text"
               name="max-price"
-              value={maxPrice.toLocaleString()}
+              value={maxPrice}
               onChange={e => dispatch(setMaxPriceAction(e.target.value))}
             />
           </div>

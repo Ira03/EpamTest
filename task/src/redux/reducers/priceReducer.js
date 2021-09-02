@@ -1,7 +1,7 @@
 export const SET_MIN_PRICE = 'SET_MIN_PRICE';
 export const SET_MAX_PRICE = 'SET_MAX_PRICE';
 
-const initialState = { min: 0, max: 0 };
+const initialState = { min: '', max: '' };
 
 export const priceReducer = (state = initialState, action) => {
   const { type, payload } = action;
