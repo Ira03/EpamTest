@@ -29,12 +29,12 @@ module.exports = ({development}) => ({
   mode: development ? 'development' : 'production',
   devtool: development ? 'inline-source-map' : false,
   entry: {
-    // main: './src/index.js',
-    main: ['core-js/stable', './src/index.js']
+    main: './src/index.js',
+    // main: ['core-js/stable', './src/index.js']
   },
   output: {
     filename: '[name].[contenthash].js',
-    publicPath: './',
+    publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'assets/[hash][ext]',
   },

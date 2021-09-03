@@ -39,11 +39,7 @@ body {
   color: #262626;
   font-size: 16px;
   background-color: #faf9f8;
-  min-height: 100vh;
-}
 
-header {
-  height: unset;
 }
 
 h1 {
@@ -107,6 +103,16 @@ button {
   display: flex;
   flex-wrap: wrap;
   padding-top: 60px;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   @include media-laptop {
     padding-top: 15px;
   }
