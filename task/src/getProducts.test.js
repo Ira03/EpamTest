@@ -1,11 +1,3 @@
-import { render } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import { store } from './redux/store';
-import { setMinPriceAction, setMaxPriceAction } from './redux/actionCreators/price';
-import { addProductsAction } from './redux/actionCreators/products';
-import { stopLoadingAction } from './redux/actionCreators/loading';
-import { App } from './components/App';
-
 const products = [
   {
     brand: 'apple',
